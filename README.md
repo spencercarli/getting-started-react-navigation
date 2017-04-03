@@ -1,4 +1,4 @@
-Code for intro to React Navigation tutorial.
+Code for [intro to React Navigation tutorial](https://hackernoon.com/getting-started-with-react-navigation-the-navigation-solution-for-react-native-ea3f4bd786a4).
 
 # Installation
 

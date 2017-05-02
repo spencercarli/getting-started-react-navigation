@@ -16,9 +16,9 @@ export const FeedStack = StackNavigator({
   },
   Details: {
     screen: UserDetail,
-    navigationOptions: {
-      title: ({ state }) => `${state.params.name.first.toUpperCase()} ${state.params.name.last.toUpperCase()}`
-    },
+    navigationOptions: ({ navigation }) => ({
+      title: `${navigation.state.params.name.first.toUpperCase()} ${navigation.state.params.name.last.toUpperCase()}`,
+    }),
   },
 });
 
@@ -26,19 +26,15 @@ export const Tabs = TabNavigator({
   Feed: {
     screen: FeedStack,
     navigationOptions: {
-      tabBar: {
-        label: 'Feed',
-        icon: ({ tintColor }) => <Icon name="list" size={35} color={tintColor} />
-      },
+      tabBarLabel: 'Feed',
+      tabBarIcon: ({ tintColor }) => <Icon name="list" size={35} color={tintColor} />,
     },
   },
   Me: {
     screen: Me,
     navigationOptions: {
-      tabBar: {
-        label: 'Me',
-        icon: ({ tintColor }) => <Icon name="account-circle" size={35} color={tintColor} />
-      },
+      tabBarLabel: 'Me',
+      tabBarIcon: ({ tintColor }) => <Icon name="account-circle" size={35} color={tintColor} />
     },
   },
 });

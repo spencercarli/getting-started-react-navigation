@@ -11,3 +11,7 @@ Code for [intro to React Navigation tutorial](https://hackernoon.com/getting-sta
 
 - `react-native run-ios`
 - `react-native run-android`
+
+## Expo
+
+You can also run this using Expo - check out [this repo](https://github.com/ricbermo/getting-started-react-navigation-expo).

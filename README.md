@@ -4,7 +4,7 @@ Code for [intro to React Navigation tutorial](https://hackernoon.com/getting-sta
 
 - `git clone https://github.com/spencercarli/getting-started-react-navigation.git`
 - `cd getting-started-react-navigation`
-- `npm install`
+- `yarn install` or `npm install`
 
 
 # Running

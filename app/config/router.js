@@ -7,7 +7,7 @@ import Settings from '../screens/Settings';
 import UserDetail from '../screens/UserDetail';
 import Me from '../screens/Me';
 
-export const FeedStack = StackNavigator({
+const FeedStack = StackNavigator({
   Feed: {
     screen: Feed,
     navigationOptions: {
@@ -22,7 +22,7 @@ export const FeedStack = StackNavigator({
   },
 });
 
-export const Tabs = TabNavigator({
+const Tabs = TabNavigator({
   Feed: {
     screen: FeedStack,
     navigationOptions: {
@@ -39,7 +39,7 @@ export const Tabs = TabNavigator({
   },
 });
 
-export const SettingsStack = StackNavigator({
+const SettingsStack = StackNavigator({
   Settings: {
     screen: Settings,
     navigationOptions: {
